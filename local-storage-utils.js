@@ -7,7 +7,7 @@ export function setPokedex(personalPokedex) {
     const stringyPokedex = JSON.stringify(personalPokedex);
     localStorage.setItem(POKEDEX, stringyPokedex);
 }
-
+//puppies
 //get
 export function getPokedex() {
     const stringyPokedex = localStorage.getItem(POKEDEX);
