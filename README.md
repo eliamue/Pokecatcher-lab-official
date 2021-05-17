@@ -1,7 +1,7 @@
 HTML
--3 radio buttons
--1 catch button
--3 images
+3 radio buttons
+1 catch button
+3 images
 
 JS
 1) Create list of objects for the pokedex, have it in an array
