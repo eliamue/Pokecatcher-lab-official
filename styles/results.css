@@ -24,11 +24,10 @@ body {
 
 main {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-evenly;
     align-items: center;
-    margin: 50px;
     margin-bottom: calc(var(--footer-height));
 }
 
@@ -45,13 +44,12 @@ section {
     padding-bottom: var(--gutter);
     margin-top: var(--gutter);
     margin-bottom: var(--gutter);
-    margin-left: 50px;
     border: solid 2px var(--color1);
 }
 
 header {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     background-color: var(--color3);
     height: var(--header-height);
     box-shadow: var(--shadow);
@@ -64,15 +62,9 @@ footer {
     box-shadow: var(--shadow);
 }
 
-h1 {
-    font-size: 3rem;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
-
 h2 {
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: bold;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 .gutter-right {
@@ -91,22 +83,19 @@ footer {
 }
 
 .poke {
-    display: flex;
+
     min-width: 200px;
     min-height: 200px;
     max-width: 400px;
     max-height: 400px;
-    margin: 15px;
+    margin: 5px;
     padding: 5px;
     border-radius: 20px;
-
 }
 
 #catchable {
     display: flex;
     flex-direction: row;
-    margin: 15px;
-    padding: 15px;
 }
 
 input {
@@ -115,23 +104,6 @@ input {
 
 input:checked + img {
     border-radius: 20px;
-    box-shadow: 0px 0px 10px 5px rgb(244, 28, 28);
-    background-color: rgb(244, 28, 28);
-}
-
-#catch {
-    display: flex;
-    margin: 15px;
-    background: transparent;
-    border: transparent;
-    padding: 15px;
-    align-self: center;
-}
-
-#catch:hover {
-    border: 10px solid turquoise;
-    box-shadow: 0px 0px 20px 15px turquoise;
-    background-repeat: no-repeat;
-    background-color: turquoise;
-    border-radius: 100px;
+  box-shadow: 0px 0px 10px 5px rgb(244, 28, 28);
+  background-color: rgb(244, 28, 28);
 }
