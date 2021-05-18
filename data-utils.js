@@ -6,7 +6,21 @@ export function mungeCaptured(pokemonArray) {
     const results = [];
     // loop through each item in pokemonArray
     for (let poke of pokemonArray) {
-        results.push(poke.captured);
+
+        results.push(poke.captures);
+    }
+    // push the captured key on the pokemon array
+    // [4, 2, 0] is the goal
+    return results;
+}
+
+export function mungeEncountered(pokemonArray) {
+    //initialize and empty array 
+    const results = [];
+    // loop through each item in pokemonArray
+    for (let poke of pokemonArray) {
+
+        results.push(poke.encounters);
     }
     // push the captured key on the pokemon array
     // [4, 2, 0] is the goal
@@ -17,7 +31,7 @@ export function mungeNames(pokemonArray) {
     const results = [];
     for (let poke of pokemonArray) {
         const data = findById(pokemon, poke.id);
-        results.push(data.pokemon);
+        results.push(data.name);
     }
         //inport findById, master pokemon list
     // initialize an empty array
@@ -30,7 +44,6 @@ export function mungeNames(pokemonArray) {
 
 export function mungeColors(pokemonArray) {
     const results = [];
-
     for (let poke of pokemonArray) {
         const data = findById(pokemon, poke.id);
         results.push(data.color);

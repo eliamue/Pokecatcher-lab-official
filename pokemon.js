@@ -21,7 +21,7 @@ export default [
         pid: 179,
         name: 'Mareep',
         img: 'mareep.png',
-        color: 'cream'
+        color: 'pink'
     },
 // sableye
     {
@@ -45,7 +45,7 @@ export default [
         pid: 468,
         name: 'Togekiss',
         img: 'togekiss.png',
-        color: 'cream'
+        color: 'yellow'
     },
 // gengar
     {

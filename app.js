@@ -9,6 +9,7 @@ const radio3 = document.querySelector('#pokemon3');
 const img1 = document.querySelector('#poke-img1');
 const img2 = document.querySelector('#poke-img2');
 const img3 = document.querySelector('#poke-img3');
+const pokedexButton = document.querySelector('#see-results');
 // initialize state
 renderThreePokemon();
 // add event listeners and the COOL ZONE4
@@ -58,3 +59,7 @@ function renderThreePokemon() {
     radio2.value = pokemon2.id;
     radio3.value = pokemon3.id;
 }
+
+pokedexButton.addEventListener('click', () => {
+    window.location = '/results';
+});
