@@ -55,7 +55,7 @@ export default [
         name: 'Dragonite',
         img: 'dragonite.jpg'
     },
-    // wailord
+// wailord
     {
         id: 9,
         pid: 321,
