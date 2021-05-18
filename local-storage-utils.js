@@ -43,3 +43,12 @@ export function capturePokemon(iChooseYouId) {
     pokeMatch.captures++;
     setPokedex(ogPokedex);
 }
+
+export function myPersonalPokedex() {
+    let total = 0;
+    const myPokedex = getPokedex();
+    for (let poke of myPokedex) {
+        total += poke.captures;
+    }
+    return total;
+}

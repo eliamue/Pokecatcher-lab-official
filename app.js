@@ -1,5 +1,5 @@
 // import functions
-import { capturePokemon, encounterPokemon } from './local-storage-utils.js';
+import { capturePokemon, encounterPokemon, myPersonalPokedex } from './local-storage-utils.js';
 import lookAtAllTheseChickens from './pokemon.js';
 // grab DOM elements
 const button = document.querySelector('#catch');
@@ -16,7 +16,13 @@ button.addEventListener('click', () => {
     const caughtPokemon = document.querySelector(':checked');
     const chosenPokemonId = caughtPokemon.value;
     capturePokemon(chosenPokemonId);
-    renderThreePokemon();
+
+    const pokedex = myPersonalPokedex();
+    if (pokedex >= 5) {
+        window.location.replace('/results');
+    } else {
+        renderThreePokemon();
+    }
 });
 
 function grabRandomPokemon() {
@@ -47,7 +53,6 @@ function renderThreePokemon() {
     img1.src = `./assets/${pokemon1.img}`;
     img2.src = `./assets/${pokemon2.img}`;
     img3.src = `./assets/${pokemon3.img}`;
-
 
     radio1.value = pokemon1.id;
     radio2.value = pokemon2.id;

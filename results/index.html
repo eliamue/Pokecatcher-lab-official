@@ -7,46 +7,25 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../styles/reset.css">
-    <link rel="stylesheet" href="../styles/style.css">
     <link rel="stylesheet" href="../styles/results.css">
-    <title>Document</title>
+    <title>My Pokedex</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.2.1/dist/chart.min.js"></script>
 </head>
 
 <body>
     <header>
-        <div class="gutter-right logo">
-
-        </div>
+        <h1>My Pokedex</h1>
     </header>
     <main>
         <section class="main-section">
-            <h2>
-                Catch Pokemon, Not Covid
-            </h2>
-
-            <p id="catchable">
-                <label>
-                    <input id="pokemon1" type="radio" name="pokemon" />
-                    <img class="poke" id="poke-img1" src="" />
-                </label>
-                <label>
-                    <input id="pokemon2" type="radio" name="pokemon" />
-                    <img class="poke" id="poke-img2" src="" />
-                </label>
-                <label>
-                    <input id="pokemon3" type="radio" name="pokemon" />
-                    <img class="poke" id="poke-img3" src="" />
-                </label>
-                <button id="catch">Catch 'em</button>
-            </p>
-
+            <canvas id="myChart"></canvas>
         </section>
     </main>
     <footer>
-        <div class="copy gutter-right">Pokedex</div>
+        <button id="reset-button">Reset</button>
     </footer>
 
-    <script type="module" src="./app.js"></script>
+    <script type="module" src="./results.js"></script>
 </body>
 
 </html>

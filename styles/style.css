@@ -55,6 +55,7 @@ header {
     background-color: var(--color3);
     height: var(--header-height);
     box-shadow: var(--shadow);
+    padding-top: 10px;
 }
 
 footer {
@@ -121,10 +122,10 @@ input:checked + img {
 
 #catch {
     display: flex;
-    margin: 15px;
+    margin: 5px;
     background: transparent;
     border: transparent;
-    padding: 15px;
+    padding: 5px;
     align-self: center;
 }
 
