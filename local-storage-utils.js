@@ -2,18 +2,20 @@ import { findById } from './utils.js';
 
 const POKEDEX = 'pokedex';
 
-//set
+//grabs the personal pokedex and parses it to then be set
+export function getPokedex() {
+    const stringyPokedex = localStorage.getItem(POKEDEX);
+    if (!stringyPokedex) {
+        return [];
+    }
+    const ogPokedex = JSON.parse(stringyPokedex);
+    return ogPokedex;
+}
+
+//stringifies the personal pokedex that it got from get, returns it to locStor
 export function setPokedex(personalPokedex) {
     const stringyPokedex = JSON.stringify(personalPokedex);
     localStorage.setItem(POKEDEX, stringyPokedex);
-}
-//puppies
-//get
-export function getPokedex() {
-    const stringyPokedex = localStorage.getItem(POKEDEX);
-    const ogPokedex = JSON.parse(stringyPokedex);
-
-    return ogPokedex;
 }
 
 //encounter
@@ -36,8 +38,8 @@ export function encounterPokemon(iChooseYouId) {
 
 //capture
 export function capturePokemon(iChooseYouId) {
-    const ogPokedex = encounterPokemon(iChooseYouId);
+    const ogPokedex = getPokedex();
     const pokeMatch = findById(ogPokedex, iChooseYouId);
-    pokeMatch.captured++;
+    pokeMatch.captures++;
     setPokedex(ogPokedex);
 }
