@@ -16,7 +16,6 @@ button.addEventListener('click', () => {
     const caughtPokemon = document.querySelector(':checked');
     const chosenPokemonId = caughtPokemon.value;
     capturePokemon(chosenPokemonId);
-
     renderThreePokemon();
 });
 
