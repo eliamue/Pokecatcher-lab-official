@@ -45,9 +45,10 @@ function renderThreePokemon() {
     encounterPokemon(pokemon2.id);
     encounterPokemon(pokemon3.id);
 
-    img1.src = pokemon1.url_image;
-    img2.src = pokemon2.url_image;
-    img3.src = pokemon3.url_image;
+    img1.src = `./assets/${pokemon1.img}`;
+    img2.src = `./assets/${pokemon2.img}`;
+    img3.src = `./assets/${pokemon3.img}`;
+
 
     radio1.value = pokemon1.id;
     radio2.value = pokemon2.id;
