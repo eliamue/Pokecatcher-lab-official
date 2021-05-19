@@ -24,7 +24,7 @@ export function encounterPokemon(iChooseYouId) {
 
     const pokeMatch = findById(ogPokedex, iChooseYouId);
     if (pokeMatch) {
-        pokeMatch.encountered++;
+        pokeMatch.encounters++;
     } else {
         const newItem = {
             captures: 0,
@@ -41,6 +41,7 @@ export function capturePokemon(iChooseYouId) {
     const ogPokedex = getPokedex();
     const pokeMatch = findById(ogPokedex, iChooseYouId);
     pokeMatch.captures++;
+
     setPokedex(ogPokedex);
 }
 

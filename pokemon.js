@@ -13,7 +13,7 @@ export default [
         pid: 163,
         name: 'Hoothoot',
         img: 'hoothoot.png',
-        color: 'brown'
+        color: 'saddlebrown'
     },
 // mareep
     {
@@ -21,7 +21,7 @@ export default [
         pid: 179,
         name: 'Mareep',
         img: 'mareep.png',
-        color: 'pink'
+        color: 'khaki'
     },
 // sableye
     {
@@ -37,7 +37,7 @@ export default [
         pid: 282,
         name: 'Gardevoir',
         img: 'gardevoir.jpg',
-        color: 'green'
+        color: 'darkseagreen'
     },
 // togekiss
     {
@@ -45,7 +45,7 @@ export default [
         pid: 468,
         name: 'Togekiss',
         img: 'togekiss.png',
-        color: 'yellow'
+        color: 'lightcyan'
     },
 // gengar
     {
@@ -53,7 +53,7 @@ export default [
         pid: 94,
         name: 'Gengar',
         img: 'gengar.jpg',
-        color: 'purple'
+        color: 'rebeccapurple'
     },
 // dragonite
     {
@@ -76,6 +76,6 @@ export default [
         pid: 133,
         name: 'Eevee',
         img: 'eevee.png',
-        color: 'brown'
+        color: 'darkgoldenrod'
     }
 ];
