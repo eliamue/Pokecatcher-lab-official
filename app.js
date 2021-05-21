@@ -20,7 +20,7 @@ button.addEventListener('click', () => {
 
     const pokedex = myPersonalPokedex();
     if (pokedex >= 5) {
-        window.location.replace('./results');
+        window.location.replace('/results');
     } else {
         renderThreePokemon();
     }
