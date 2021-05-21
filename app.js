@@ -29,7 +29,6 @@ button.addEventListener('click', () => {
 function grabRandomPokemon() {
     const pokedexOptions = Math.floor(Math.random() * lookAtAllTheseChickens.length);
     const randomPokemon = lookAtAllTheseChickens[pokedexOptions];
-
     return randomPokemon;
 }
 
@@ -61,5 +60,5 @@ function renderThreePokemon() {
 }
 
 pokedexButton.addEventListener('click', () => {
-    window.location = '/results';
+    window.location = './results';
 });
