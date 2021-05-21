@@ -46,7 +46,7 @@ new Chart(ctx, {
 
 resetButton.addEventListener('click', () => {
     // redirect to home
-    window.location = '/';
+    window.location = './';
     // clear local storage
     setPokedex([]);
     
