@@ -60,5 +60,5 @@ function renderThreePokemon() {
 }
 
 pokedexButton.addEventListener('click', () => {
-    window.location = '/results';
+    window.location = './results';
 });
