@@ -5,13 +5,9 @@ let ctx = document.getElementById('myChart').getContext('2d');
 
 const resetButton = document.getElementById('reset-button');
 const pokedex = getPokedex();
-console.log(pokedex);
 const names = mungeNames(pokedex);
-console.log(names);
 const capturedData = mungeCaptured(pokedex);
-console.log(capturedData);
 const colors = mungeColors(pokedex);
-console.log(colors);
 const encounteredData = mungeEncountered(pokedex);
 
 new Chart(ctx, {
