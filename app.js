@@ -9,6 +9,10 @@ const radio3 = document.querySelector('#pokemon3');
 const img1 = document.querySelector('#poke-img1');
 const img2 = document.querySelector('#poke-img2');
 const img3 = document.querySelector('#poke-img3');
+const name1 = document.querySelector('#poke-name1');
+const name2 = document.querySelector('#poke-name2');
+const name3 = document.querySelector('#poke-name3');
+
 const pokedexButton = document.querySelector('#see-results');
 // initialize state
 renderThreePokemon();
@@ -51,8 +55,11 @@ function renderThreePokemon() {
     encounterPokemon(pokemon3.id);
 
     img1.src = `./assets/${pokemon1.img}`;
+    name1.textContent = `${pokemon1.name}`;
     img2.src = `./assets/${pokemon2.img}`;
+    name2.textContent = `${pokemon2.name}`;
     img3.src = `./assets/${pokemon3.img}`;
+    name3.textContent = `${pokemon3.name}`;
 
     radio1.value = pokemon1.id;
     radio2.value = pokemon2.id;

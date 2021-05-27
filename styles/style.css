@@ -1,25 +1,12 @@
 
 body {
-    /* https://coolors.co/generate and click export -> scss to get the colors to copy and paste below*/
-    /* --color1: hsla(349, 69%, 76%, 1);
-    --color2: hsla(207, 67%, 44%, 1);
-    --color3: hsla(200, 61%, 56%, 1);
-    --color4: hsla(187, 41%, 94%, 1);
-    --color5: hsla(170, 28%, 95%, 1); */
-
-    /* --color1: hsla(45, 86%, 83%, 1);
-    --color2: hsla(135, 65%, 98%, 1);
-    --color3: hsla(315, 37%, 86%, 1);
-    --color4: hsla(45, 73%, 98%, 1);
-    --color5: hsla(224, 40%, 79%, 1); */
-    
     --header-height: 80px;
     --shadow: 0px 10px 20px -12px rgba(0,0,0,0.45);
     --gutter: 30px;
     --footer-height: 25px;
     
     font-family: 'Titillium Web', sans-serif;
-    background-color: var(--color2);
+    background-color: rgb(247, 245, 245);;
 }
 
 main {
@@ -30,6 +17,7 @@ main {
     align-items: center;
     margin: 50px;
     margin-bottom: calc(var(--footer-height));
+    background-color: rgb(247, 245, 245);
 }
 
 section {
@@ -37,8 +25,6 @@ section {
     width: 1000px;
     max-width: 80%;
     display: flex;
-    flex-wrap: nowrap;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
     padding-top: var(--gutter);
@@ -52,7 +38,7 @@ section {
 header {
     display: flex;
     justify-content: center;
-    background-color: var(--color3);
+    background-color: rgba(255, 98, 98, 0.769);
     height: var(--header-height);
     box-shadow: var(--shadow);
     padding-top: 10px;
@@ -68,12 +54,14 @@ footer {
 h1 {
     font-size: 3rem;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-shadow: 2px 2px 5px rgb(121, 121, 121);
 }
 
 h2 {
     font-size: 2rem;
     font-weight: bold;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-shadow: 2px 2px 5px rgb(121, 121, 121);
 }
 
 #see-results {
@@ -93,6 +81,7 @@ footer {
 
 .poke {
     display: flex;
+    flex-direction: column;
     min-width: 200px;
     min-height: 200px;
     max-width: 400px;
@@ -104,10 +93,9 @@ footer {
 
 #catchable {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     margin: 15px;
     padding: 15px;
-    color:
 }
 
 input {
@@ -127,6 +115,7 @@ input:checked + img {
     border: transparent;
     padding: 5px;
     align-self: center;
+    flex-direction: column;
 }
 
 #catch:hover {
@@ -135,4 +124,14 @@ input:checked + img {
     background-repeat: no-repeat;
     background-color: turquoise;
     border-radius: 100px;
+}
+
+.names {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-shadow: 2px 2px 5px rgb(121, 121, 121);
 }
